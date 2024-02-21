@@ -16,14 +16,18 @@ print(math.ceil(float_number))
 print(math.sqrt(float_number))
 
 #Exercise 4: Select the first element from your dictionary.
-first_element = my_dictionary.values()[0]
+first_key = list(my_dictionary.keys())[0]
+first_value = list(my_dictionary.values())[0]
+first_element = first_key + ' : ' + str(first_value)
 print(first_element)
+
 
 #Exercise 5: Select the second element from your tuple.
 print(my_tuple[1])
 
 #Exercise 6: Add an element to the end of your list.
-print(my_list.append(5))
+my_list.append(7)
+print(my_list)
 
 #Exercise 7: Replace the first element in your list.
 my_list[0] = 99
